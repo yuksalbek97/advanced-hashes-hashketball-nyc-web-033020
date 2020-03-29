@@ -168,15 +168,25 @@ else
 end
 end
  
- def players_numbers
-  
- end
+ def player_numbers(team_name)
+   number_data = game_hash.each_pair do |team, team_data| 
+     if team_data[:team_name] == team_name
+       return team_data[:players][]
+       binding.pry 
+       
+     end
+     
+   
+   end
+   
+  end
  
  def player_stats
    
    end
  
  def big_shoe_rebounds
+   
  end
  
  
